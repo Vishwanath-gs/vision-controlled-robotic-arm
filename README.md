@@ -133,6 +133,36 @@ Gazebo
    ↓
 Robotic Arm
 
+
+Running the Project
+1. Source ROS 2
+source /opt/ros/humble/setup.bash
+2. Enter the workspace
+cd ~/Projects/robot_arm_ws
+3. Build
+colcon build --symlink-install
+4. Source the workspace
+source install/setup.bash
+5. Start Gazebo
+ros2 launch pkg_04_assembly gazebo.launch.py
+6. Start the required ROS 2 nodes
+
+Start the ROS-Gazebo bridge, inverse-kinematics bridge and arm controller
+according to the project's launch configuration.
+
+7. Start the vision controller
+
+Activate the Python environment:
+
+source vision_env/bin/activate
+
+Then:
+
+python3 vision_controller.py
+
+
+
+
 ## Future Improvements
 
 - Gesture-based object grasping and release
@@ -140,3 +170,4 @@ Robotic Arm
 - Improved workspace calibration
 - Collision avoidance
 - Physical robotic-arm implementation
+
