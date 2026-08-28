@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pkg_04_assembly</name>
+  <version>0.0.1</version>
+  <description>Vision guided robotic arm simulation</description>
+
+  <maintainer email="vishwanath@example.com">Vishwanath</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <depend>ament_cmake</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>rviz2</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

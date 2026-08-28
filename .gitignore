@@ -1,0 +1,13 @@
+build/
+install/
+log/
+vision_env/
+
+__pycache__/
+*.pyc
+*.egg-info/
+
+.vscode/
+
+.DS_Store
+Thumbs.db
